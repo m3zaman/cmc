@@ -31,7 +31,7 @@ const HelpPage = ({ data }) => (
 export default HelpPage
 
 export const query = graphql`
-  query HelpQuery {
+  query HelpPageQuery {
     allDatoCmsHelp(sort: { fields: [position], order: ASC }) {
       edges {
         node {
