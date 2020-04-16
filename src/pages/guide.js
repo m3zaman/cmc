@@ -4,7 +4,7 @@ import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
 import Layout from "../components/layout"
 
-const HelpPage = ({ data }) => (
+const GuidePage = ({ data }) => (
   <Layout>
     <Masonry className="showcase">
       {data.allDatoCmsHelp.edges.map(({ node: help }) => (
@@ -28,10 +28,10 @@ const HelpPage = ({ data }) => (
   </Layout>
 )
 
-export default HelpPage
+export default GuidePage
 
 export const query = graphql`
-  query HelpPageQuery {
+  query GuidePageQuery {
     allDatoCmsHelp(sort: { fields: [position], order: ASC }) {
       edges {
         node {
