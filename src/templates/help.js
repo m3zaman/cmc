@@ -36,9 +36,6 @@ export default ({ data }) => (
 export const query = graphql`
   query HelpQuery($slug: String!) {
     datoCmsHelp(slug: { eq: $slug }) {
-      seoMetaTags {
-        ...GatsbyDatoCmsSeoMetaTags
-      }
       title
       excerpt
       gallery {
