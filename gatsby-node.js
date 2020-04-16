@@ -16,7 +16,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `).then(result => {
-      result.data.allDatoCmsHelp.edges.map(({ node: work }) => {
+      result.data.allDatoCmsHelp.edges.map(({ node: help }) => {
         createPage({
           path: `helps/${help.slug}`,
           component: path.resolve(`./src/templates/help.js`),
