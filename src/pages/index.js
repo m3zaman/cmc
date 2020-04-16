@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 
 const IndexPage = ({ data }) => (
   <Layout>
+    <h1 className="sheet__title">Recent posts from Call My Clinic Team</h1>
     <Masonry className="showcase">
       {data.allDatoCmsWork.edges.map(({ node: work }) => (
         <div key={work.id} className="showcase__item">
