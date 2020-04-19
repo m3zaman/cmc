@@ -10,6 +10,7 @@ const IndexPage = ({ data: { index } }) => (
       <HelmetDatoCms seo={index.seoMetaTags} />
       <div className="sheet__inner">
         <h1 className="sheet__title">{index.title}</h1>
+        <p className="sheet__lead">{index.subtitle}</p>
         <div className="sheet__gallery">
           <Img fluid={index.photo.fluid} />
         </div>
