@@ -69,7 +69,22 @@ const TemplateWrapper = ({ children }) => {
                   <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <Link to="/policy">Policy</Link>
+                  <Link to="/faq">FAQ</Link>
+                </li>
+                <li>
+                  <Link to="/guide">Help guides</Link>
+                </li>
+                <li>
+                  <Link to="/terms">Terms and Conditions</Link>
+                </li>
+                <li>
+                  <Link to="/privacy">Privacy Policy</Link>
+                </li>
+                <li>
+                  <Link to="/refund">Refund Policy</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
               <p className="sidebar__social">
