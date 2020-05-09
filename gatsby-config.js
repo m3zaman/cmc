@@ -9,14 +9,6 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
     {
-      resolve: `gatsby-plugin-gtag`,
-      options: {
-        trackingId: "UA-166003851-1",
-        head: false,
-        anonymize: true,
-      },
-    },
-    {
       resolve: `gatsby-source-datocms`,
       options: {
         apiToken: process.env.DATO_API_TOKEN,
