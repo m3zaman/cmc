@@ -9,9 +9,11 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
         trackingId: "UA-166003851-1",
+        head: false,
+        anonymize: true,
       },
     },
     {
